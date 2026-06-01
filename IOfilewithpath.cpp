@@ -15,7 +15,9 @@ int main()
     //membuat file dalam mode menulis
     ofstream outfile;
     //menunjuk ke sebuah nama file dengan ekstentsi txt
-    
+    outfile.open(NamaFile + ".txt", ios::out);
+
+    cout << ">= Menulis file, \'q\' untuk keluar" << endl;
 
     //looping untuk menulis isi file
     while (true)
@@ -43,10 +45,7 @@ int main()
     if (infile.is_open())
     {
         //perulangan untuk menampilkan setiap baris
-        while (getline(infile, baris))
-        {
-            cout << baris << endl;
-        }
+        
         //menutup file jika telah selesai di loop
         infile.close();
     }
