@@ -17,11 +17,7 @@ private:
 
 public:
     // Constructor untuk mengisi data awal secara otomatis
-    TokoElektronik() {
-        etalase[0] = "Televisi LED 32 Inch";
-        etalase[1] = "Kulkas 2 Pintu";
-        etalase[2] = "Mesin Cuci Otomatis";
-    }
+   
 
     // Method untuk mengambil produk berdasarkan nomorRak dengan Exception Handling
     string ambilProduk(size_t nomorRak) {
