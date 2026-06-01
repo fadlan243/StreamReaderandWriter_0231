@@ -17,7 +17,11 @@ private:
 
 public:
     // Constructor untuk mengisi data awal secara otomatis
-   
+    TokoElektronik() {
+        etalase[0] = "Televisi LED 32 Inch";
+        etalase[1] = "Kulkas 2 Pintu";
+        etalase[2] = "Mesin Cuci Otomatis";
+    }
 
     // Method untuk mengambil produk berdasarkan nomorRak dengan Exception Handling
     string ambilProduk(size_t nomorRak) {
@@ -38,11 +42,7 @@ public:
 const string FILE_NAME = "gudang.txt";
 
 // Struktur helper untuk mempermudah manipulasi data barang di memori
-struct Barang {
-    string id;
-    string nama;
-    string harga;
-};
+
 
 // Fungsi Helper untuk membaca semua data dari file ke Vector
 vector<Barang> bacaSemuaBarang() {
